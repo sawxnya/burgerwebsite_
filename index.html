@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buns & Bites | Artisanal Burgers</title>
+    <style>
+        :root { --bg: #120A06; --card: #1C120C; --maroon: #7A1C2E; --text: #F7EBE1; --muted: #A89284; --gold: #D4AF37; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Georgia', serif; }
+        body { background: var(--bg); color: var(--text); text-align: center; overflow-x: hidden; }
+        
+        nav { 
+            background: rgba(18, 10, 6, 0.85); backdrop-filter: blur(10px); padding: 1.2rem; 
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2); position: sticky; top: 0; z-index: 10; font-family: sans-serif; 
+        }
+        nav a { 
+            color: var(--muted); text-decoration: none; font-weight: 500; margin: 0 10px; padding: 8px 16px; 
+            border-radius: 2px; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; transition: all 0.4s; 
+        }
+        nav a.active, nav a:hover { color: var(--gold); background: rgba(122, 28, 46, 0.3); }
+
+        section { max-width: 700px; margin: 4rem auto; padding: 1rem; }
+        .title { font-size: 3.2rem; letter-spacing: 4px; font-weight: normal; }
+        .subtitle { color: var(--gold); margin-top: 0.5rem; font-style: italic; font-size: 1.1rem; letter-spacing: 1px; }
+
+        .img-container { position: relative; display: inline-block; margin: 2.5rem 0; }
+        .hero-img { width: 100%; max-width: 420px; height: 280px; object-fit: cover; border-radius: 2px; box-shadow: 0 15px 35px rgba(0,0,0,0.8); }
+        .img-container::after { content: ''; position: absolute; top: -10px; left: -10px; right: -10px; bottom: -10px; border: 1px solid var(--gold); opacity: 0.3; pointer-events: none; }
+
+        .btn { 
+            display: inline-block; background: transparent; color: var(--gold); border: 1px solid var(--gold); 
+            text-decoration: none; padding: 14px 36px; font-family: sans-serif; font-size: 0.8rem; letter-spacing: 2px; 
+            text-transform: uppercase; margin-top: 1.5rem; transition: all 0.4s; 
+        }
+        .btn:hover { background: var(--gold); color: var(--bg); box-shadow: 0 0 15px rgba(212, 175, 55, 0.4); }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="active">Intro</a>
+        <a href="product.html">Menu</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section>
+        <h1 class="title">BUNS & BITES</h1>
+        <p class="subtitle">EST. 1924 — CLASSICAL ARTISANAL GASTRONOMY</p>
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop" alt="Burgers" class="hero-img">
+        </div>
+        <p style="line-height: 2; color: var(--muted); font-size: 1rem; max-width: 550px; margin: 0 auto;">
+            We serve prime smash burgers crafted with select dry-aged beef, freshly baked brioche buns, and our proprietary burgundy reduction sauce.
+        </p>
+        <a href="product.html" class="btn">Explore Menu</a>
+    </section>
+</body>
+</html>
